@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "/css/reset.css";
 @import "/css/status-bar.css";
+@import "/css/variables.css";
 
 body{
     font-family: "Open Sans";
@@ -12,6 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .welcome-header__title{
@@ -23,3 +25,27 @@ body{
     width: 60%;
     opacity: .7;
 }
+
+/* login form */
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px
+}
+#login-form input{
+   padding: 15px 0;
+   border: none;    
+   font-size: 18px;
+   border-bottom: 1px solid rgba(0,0,0,.1);
+   margin-bottom: 20px;
+   outline: none;
+   transition: border-color .3s ease-in-out;
+}
+#login-form input::placeholder{
+    color: rgba(0,0,0,.3);
+}
+
+#login-form input:focus{
+    border-color: var(--yellow);
+}
+
