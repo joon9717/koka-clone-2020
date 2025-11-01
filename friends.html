@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
+    <title>Friends - kokoa clone</title>
 </head>
 <body>
     <!-- Status Bar -->
@@ -24,23 +24,17 @@
         </div>
     </div>
 
-    <!-- header Text -->
-     <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">If you have a Kokoa Account, login with your email or phone number.</p>
-     </header>
+    <!-- BOTTOM NAV -->
 
-     <!-- form section-->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-regular fa-comment fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
+        </ul>
+    </nav>
 
-     <form id="login-form"  action="/friends.html" method="GET">
-        <input type="text" placeholder="en or phone number">
-        <input type="password" placeholder="password">
-        <input type="submit" value="Log In">
-        <input type="submit" value="Sign Up">
-        <a href="#">Find Kokoa Account or Password</a>
-        
-     </form>
-     
 
     <script src="https://kit.fontawesome.com/433fd57aa4.js" crossorigin="anonymous"></script>
 </body>
